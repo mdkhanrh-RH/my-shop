@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<title>My Shop</title>
-<style>
-body { margin:0; font-family: Arial; }
+  <meta charset="UTF-8">
+  <title>My Shop</title>
 
-nav {
-    background:#131921;
-    color:white;
-    padding:15px;
-    display:flex;
-    justify-content:space-between;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-nav h2 { margin:0; }
+    nav {
+      background: #131921;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+    }
 
-.hero {
-    background:url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da');
-    background-size:cover;
-    height:80vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    color:white;
-}
+    .hero {
+      height: 90vh;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+    }
 
-.hero h1 { font-size:50px; }
+    .hero h1 {
+      font-size: 50px;
+      margin: 10px;
+    }
 
-.btn {
-    margin-top:20px;
-    padding:15px 30px;
-    background:orange;
-    color:black;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-}
+    .hero p {
+      font-size: 20px;
+    }
 
-.products {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-    padding:20px;
-}
+    .btn {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: orange;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
 
-.card {
-    background:white;
-    padding:15px;
-    border:1px solid #ddd;
-    text-align:center;
-}
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
 
-.card img {
-    width:100%;
-    height:200px;
-    object-fit:cover;
-}
-</style>
+    .card {
+      width: 200px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-    <h2>🛒 My Shop</h2>
-    <a href="shop.html" style="color:white;">Shop</a>
-</nav>
+  <nav>🛒 My Shop</nav>
 
-<div class="hero">
+  <div class="hero">
     <h1>Welcome to My Store</h1>
     <p>Best deals everyday 🔥</p>
-    <a class="btn" href="shop.html">Shop Now</a>
-</div>
 
-<div class="products">
+    <!-- IMPORTANT BUTTON -->
+    <a href="order.html">
+      <button class="btn">Shop Now</button>
+    </a>
+  </div>
+
+  <div class="products">
     <div class="card">
-        <img src="https://via.placeholder.com/300">
-        <h3>Product 1</h3>
-        <p>৳ 500</p>
+      <img src="https://via.placeholder.com/200" alt="Product">
+      <h3>Product 1</h3>
+      <p>৳500</p>
     </div>
 
     <div class="card">
-        <img src="https://via.placeholder.com/300">
-        <h3>Product 2</h3>
-        <p>৳ 800</p>
+      <img src="https://via.placeholder.com/200" alt="Product">
+      <h3>Product 2</h3>
+      <p>৳700</p>
     </div>
 
     <div class="card">
-        <img src="https://via.placeholder.com/300">
-        <h3>Product 3</h3>
-        <p>৳ 1200</p>
+      <img src="https://via.placeholder.com/200" alt="Product">
+      <h3>Product 3</h3>
+      <p>৳900</p>
     </div>
-</div>
+  </div>
 
 </body>
 </html>
