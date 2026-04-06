@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>My Shop</title>
+<style>
+body { margin:0; font-family: Arial; }
+
+nav {
+    background:#131921;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav h2 { margin:0; }
+
+.hero {
+    background:url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da');
+    background-size:cover;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+}
+
+.hero h1 { font-size:50px; }
+
+.btn {
+    margin-top:20px;
+    padding:15px 30px;
+    background:orange;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.products {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:20px;
+}
+
+.card {
+    background:white;
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.card img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>🛒 My Shop</h2>
+    <a href="shop.html" style="color:white;">Shop</a>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to My Store</h1>
+    <p>Best deals everyday 🔥</p>
+    <a class="btn" href="shop.html">Shop Now</a>
+</div>
+
+<div class="products">
+    <div class="card">
+        <img src="https://via.placeholder.com/300">
+        <h3>Product 1</h3>
+        <p>৳ 500</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300">
+        <h3>Product 2</h3>
+        <p>৳ 800</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300">
+        <h3>Product 3</h3>
+        <p>৳ 1200</p>
+    </div>
+</div>
+
+</body>
+</html>
